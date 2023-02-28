@@ -78,6 +78,19 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_addressToWhitelist",
+						"type": "address"
+					}
+				],
+				"name": "addToWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "owner",
 						"type": "address"
 					},
@@ -236,6 +249,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addressToRemove",
+						"type": "address"
+					}
+				],
+				"name": "removeFromWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "renounceOwnership",
 				"outputs": [],
@@ -333,6 +359,44 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addressToVerify",
+						"type": "address"
+					}
+				],
+				"name": "verifyWhitelist",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "whitelistedAddresses",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -391,7 +455,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/token.sol": "VinceToken"
+			"contracts/vinceToken.sol": "VinceToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -405,12 +469,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/token.sol": {
-			"keccak256": "0xbd9bd67346f10027bf5a2152438c8ff5cb680b58cdb92994afa9d6a3eddaa91c",
+		"contracts/vinceToken.sol": {
+			"keccak256": "0x0e805fb4995d79e3fe63bcd14793c6b9d029de58b36b0f2ea9bf1fc25c556b83",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6dd9f7245e597e9db852f46480e085aa5b9b99a410b29ef5ad4116b71066d9c1",
-				"dweb:/ipfs/QmUb1Yqp5MoLqVvsCJRjSdZYRhsknTHRgyp18Q3GfGP3mD"
+				"bzz-raw://76a5ed06edd38c1a9fafd18a1b4c0517261663fe08aa6f894a3adfaa58549ecd",
+				"dweb:/ipfs/QmQsfYXoD4SrL8aZcnL7ox5uAvMuw8RBMfdZGgBzDUXk5f"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol": {
